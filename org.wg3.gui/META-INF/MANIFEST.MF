@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gui
+Bundle-SymbolicName: org.wg3.gui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.wg3.gui.Activator
+Bundle-Vendor: 2ME
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.wg3.core;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
