@@ -7,6 +7,7 @@ Bundle-Activator: org.wg3.gui.Activator
 Bundle-Vendor: 2ME
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- org.wg3.core;bundle-version="1.0.0"
+ org.wg3.core;bundle-version="1.0.0",
+ com.jogamp.jogl;bundle-version="2.3.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
