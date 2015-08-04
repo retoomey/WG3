@@ -81,7 +81,7 @@
             name="WG3GUI">
          <property
                name="aboutText"
-               value="RCP Mail template created by PDE">
+               value="WDSS2 GUI 3.0">
          </property>
          <property
                name="windowImages"

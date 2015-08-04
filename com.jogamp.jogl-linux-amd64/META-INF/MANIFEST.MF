@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Jogl-linux-amd64
-Bundle-SymbolicName: com.jogamp.jogl-linux-amd64
+Bundle-Name: JOGL Linux 64 Bit Libraries
+Bundle-SymbolicName: com.jogamp.jogl.linux.x86_64
 Bundle-Version: 2.3.0
-Bundle-Vendor: JOGAMP
+Bundle-Vendor: JogAmp.org
 Fragment-Host: com.jogamp.jogl;bundle-version="2.3.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=x86_64))

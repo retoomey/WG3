@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Gui
+Bundle-Name: WDSS2 Standalone GUI
 Bundle-SymbolicName: org.wg3.gui;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 3.0.0.v20150801
 Bundle-Activator: org.wg3.gui.Activator
-Bundle-Vendor: 2ME
+Bundle-Vendor: NSSL/NOAA - Robert Toomey
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.wg3.core;bundle-version="1.0.0",

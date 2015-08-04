@@ -5,7 +5,7 @@ Bundle-SymbolicName: com.jogamp.jogl
 Bundle-Version: 2.3.0
 Bundle-ClassPath: gluegen-rt.jar,
  jogl-all.jar
-Bundle-Vendor: jogamp.org
+Bundle-Vendor: JogAmp.org
 Export-Package: com.jogamp.common,
  com.jogamp.common.jvm,
  com.jogamp.common.net,
