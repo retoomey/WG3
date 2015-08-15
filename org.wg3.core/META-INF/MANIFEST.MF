@@ -6,4 +6,5 @@ Bundle-Version: 3.0.0.v20150801
 Bundle-Vendor: NSSL/NOAA - Robert Toomey
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: org.wg3.datatype,
- org.wg3.log
+ org.wg3.log,
+ org.wg3.storage

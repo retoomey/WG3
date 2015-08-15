@@ -22,7 +22,7 @@
    <extension
          point="org.eclipse.ui.views">
       <view
-            name="Message"
+            name="NSSL AWIPS2 Toolbox Suite (NATS)"
             allowMultiple="true"
             icon="icons/sample2.gif"
             class="org.wg3.gui.View"

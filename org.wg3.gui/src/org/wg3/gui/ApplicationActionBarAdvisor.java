@@ -1,6 +1,5 @@
 package org.wg3.gui;
 
-import org.eclipse.jface.action.Action;
 import org.eclipse.jface.action.GroupMarker;
 import org.eclipse.jface.action.ICoolBarManager;
 import org.eclipse.jface.action.IMenuManager;
@@ -31,7 +30,6 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
     private IWorkbenchAction aboutAction;
     private IWorkbenchAction newWindowAction;
     private OpenViewAction openViewAction;
-    private Action messagePopupAction;
     
 
     public ApplicationActionBarAdvisor(IActionBarConfigurer configurer) {
@@ -54,11 +52,9 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
         newWindowAction = ActionFactory.OPEN_NEW_WINDOW.create(window);
         register(newWindowAction);
         
-        openViewAction = new OpenViewAction(window, "Open Another Message View", View.ID);
+        openViewAction = new OpenViewAction(window, "Open Another WG3 View", View.ID);
         register(openViewAction);
         
-        messagePopupAction = new MessagePopupAction("Open Message", window);
-        register(messagePopupAction);
     }
     
     protected void fillMenuBar(IMenuManager menuBar) {
@@ -73,7 +69,6 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
         // File
         fileMenu.add(newWindowAction);
         fileMenu.add(new Separator());
-        fileMenu.add(messagePopupAction);
         fileMenu.add(openViewAction);
         fileMenu.add(new Separator());
         fileMenu.add(exitAction);
@@ -86,6 +81,5 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
         IToolBarManager toolbar = new ToolBarManager(SWT.FLAT | SWT.RIGHT);
         coolBar.add(new ToolBarContributionItem(toolbar, "main"));   
         toolbar.add(openViewAction);
-        toolbar.add(messagePopupAction);
     }
 }
