@@ -5,5 +5,5 @@ Bundle-SymbolicName: com.jogamp.jogl.linux.x86_64
 Bundle-Version: 2.3.0
 Bundle-Vendor: JogAmp.org
 Fragment-Host: com.jogamp.jogl;bundle-version="2.3.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=x86_64))

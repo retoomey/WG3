@@ -4,7 +4,7 @@ Bundle-Name: WDSS2 Core
 Bundle-SymbolicName: org.wg3.core
 Bundle-Version: 3.0.0.v20150801
 Bundle-Vendor: NSSL/NOAA - Robert Toomey
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: org.wg3.datatype,
  org.wg3.log,
  org.wg3.storage

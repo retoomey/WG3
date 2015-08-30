@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: WDSS2 OpenGL Rendering Library
 Bundle-SymbolicName: org.wg3.opengl
 Bundle-Version: 1.0.0.v20150801
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: com.jogamp.jogl;bundle-version="2.3.0",
  org.wg3.core;bundle-version="3.0.0"
 Bundle-Vendor: NSSL/NOAA - Robert Toomey

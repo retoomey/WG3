@@ -22,37 +22,25 @@
    <extension
          point="org.eclipse.ui.views">
       <view
-            name="NSSL AWIPS2 Toolbox Suite (NATS)"
+            name="WG3 Tools"
             allowMultiple="true"
             icon="icons/sample2.gif"
             class="org.wg3.gui.View"
             id="org.wg3.gui.view">
       </view>
-      <view
-            name="Mailboxes"
-            allowMultiple="true"
-            icon="icons/sample3.gif"
-            class="org.wg3.gui.NavigationView"
-            id="org.wg3.gui.navigationView">
-      </view>
    </extension>
    <extension
          point="org.eclipse.ui.commands">
       <category
-            name="Mail"
+            name="WG3 Commands"
             id="org.wg3.gui.category">
       </category>
       <command
-            name="Open Mailbox"
-            description="Opens a mailbox"
             categoryId="org.wg3.gui.category"
-            id="org.wg3.gui.open">
-      </command>
-      <command
-            name="Open Message Dialog"
-            description="Open a message dialog"
-            categoryId="org.wg3.gui.category"
-            id="org.wg3.gui.openMessage">
+            defaultHandler="org.wg3.gui.OpenWGViewHandler"
+            description="Opens a WG3 Test"
+            id="org.wg3.gui.open"
+            name="Open WG3 Test">
       </command>
    </extension>
    <extension
@@ -61,11 +49,6 @@
             commandId="org.wg3.gui.open"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
             sequence="CTRL+SHIFT+O">
-      </key>
-      <key
-            commandId="org.wg3.gui.openMessage"
-            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-            sequence="CTRL+SHIFT+M">
       </key>
       <key
             commandId="org.eclipse.ui.file.exit"
@@ -92,6 +75,32 @@
                value="product_lg.gif">
          </property>
       </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="plugins">
+            <command
+                  commandId="org.wg3.gui.open"
+                  icon="icons/sample2.gif"
+                  label="Open WG3"
+                  style="push"
+                  tooltip="Open WG3 Test View">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:tools">
+         <command
+               commandId="org.wg3.gui.open"
+               label="WG3 Test View"
+               style="push">
+         </command>
+      </menuContribution>
    </extension>
 
 </plugin>
